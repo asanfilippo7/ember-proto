@@ -1,0 +1,12 @@
+<p>(index layer)</p>
+<h2>Below is a list of all preprints:</h2>
+<ul>  
+    {{#each model as |preprint|}}
+        {{preprint-item preprint=preprint}}
+    {{/each}}
+</ul> 
+<ul>
+    <li>(route defined in index.js){{#link-to "preprints.index" activeClass="selected"}}All preprints{{/link-to}}</li>
+    <li>(route defined in psychology.js){{#link-to "preprints.psychology" activeClass="selected"}}Psych preprints{{/link-to}}</li>
+    <li>(route defined in sociology.js){{#link-to "preprints.sociology" activeClass="selected"}}Soc preprints{{/link-to}}</li>
+</ul>

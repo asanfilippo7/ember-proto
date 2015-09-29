@@ -6,6 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+    this.route('preprints', {path: '/'}, function() {
+      this.route('psychology');
+      this.route('sociology');
+        this.route('preprint', { path: 'preprints/:preprint_id' });
+    });
 });
 
 export default Router;
